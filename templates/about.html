@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" type="text/css">
+
+    <title>NZinc Camp - About Us</title>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
+                <li><a class="active" href="{{ url_for('about') }}">About</a></li>
+                <li><a class="nav-link" href="{{ url_for('links') }}">Links</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div id="body-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus dapibus sapien, condimentum ultrices neque pharetra ut.
+    <p>In sit amet sapien tellus. In euismod semper diam a tempor. Nullam sed est id sem vehicula porttitor non in tellus. Fusce vitae libero commodo, vehicula lorem euismod, rhoncus purus.</p>
+    <p>In hac habitasse platea dictumst. Aenean at imperdiet ligula, et mollis sapien. Cras dapibus pulvinar accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+    <p>Donec sollicitudin, nisi in egestas faucibus, metus lectus suscipit turpis, eu rhoncus neque neque eget est. Fusce egestas arcu risus, eu dapibus purus consectetur nec.</p>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean ac auctor ligula. Donec erat magna, maximus sagittis diam eget, pellentesque sollicitudin augue. Fusce eu neque nibh. Nullam eleifend nec libero quis laoreet. Nulla consectetur libero in varius fermentum. Sed aliquam euismod nunc, sed accumsan arcu dictum at. Nunc nulla nulla, mollis vitae mattis non, ornare et nibh. Donec ac gravida massa.</p>
+</div>
+
+</body>
+</html>

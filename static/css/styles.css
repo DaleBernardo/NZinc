@@ -1,0 +1,89 @@
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+/*START GENERAL CSS*/
+body {
+    margin: 0;
+    font-family: FreeMono, monospace;
+    font-weight: 400;
+    background-size: cover;
+	background-position: center center;
+    background-image: url("../images/background.jpg");
+    text-align: center;
+}
+
+p{
+    color: Black;
+    font-size: 38px;
+    line-height: 32px;
+    margin: 0 0 24px;
+    padding: 15px
+}
+
+header {
+    background-color: transparent;
+    align: center;
+}
+
+.container {
+    width: 80%;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*.logo {
+    float: left;
+    height: 75px;
+    width: 150px;
+    padding: 10px 0;
+}*/
+
+nav {
+    overflow:hidden;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding-top: 3px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+nav a {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: White;
+}
+
+a:hover{
+    color: Black;
+}
+
+.home-image{
+    float: center;
+}
+
+.nav-link{
+    font-size: 60px;
+    padding: 1%;
+    color: White;
+}
+
+nav .active{
+    color: Black;
+}
+
+form {
+    padding: 20px;
+}

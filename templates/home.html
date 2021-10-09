@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" type="text/css">
+
+    <title>NZinc Camp - Home</title>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a class="active" href="{{ url_for('home') }}">Home</a></li>
+                <li><a class="nav-link" href="{{ url_for('about') }}">About</a></li>
+                <li><a class="nav-link" href="{{ url_for('links') }}">Links</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div id="body-content">
+    <img class="home-image" src="{{ url_for('static', filename='images/NZincLogo.png') }}" alt="logo">
+    <p>Welcome to NZinc Strategy Camp 2021</p>
+    <p>We’re so glad you’re interested in coming to Strategy Camp 2021! The event will be taking place on November 29th at Dewflock Farm campsite, Dorset. Participants will need to:</p>
+    <p>Bring their brain cells—we’re going to do some serious strategizing</p>
+    <img class="home-image" src="{{ url_for('static', filename='images/Brain.png') }}" alt="logo">
+    <p>Bring their swimming gear-it's going to get wet!</p>
+    <img class="home-image" src="{{ url_for('static', filename='images/Swim.png') }}" alt="logo">
+    <p>Not bring your pets—unfortunately due to last year’s incident we can no longer make provision for pets.</p>
+    <img class="home-image" src="{{ url_for('static', filename='images/NoPets.png') }}" alt="logo">
+    <p>Sign-up Form</p>
+
+    <form action="https://formsubmit.co/ross@interactiveworkshops.com" method="POST">
+        <input type="text" name="Full Name" placeholder="Full Name" required>
+        <input type="email" name="Email Address" placeholder="Email Address" required>
+        <input type="text" name="Agree with no pets? Yes or No" placeholder="Agree w no pets? Y/N" required>
+        <input type="text" name="Any Other Message" placeholder="Any other message" required>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
